@@ -13,9 +13,9 @@
 }
 
 .buttons__item {
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 2px solid rgba(0, 0, 0, 0.6);
-  color: #000;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: rgb(245, 245, 245);
   width: 198px;
   height: 48px;
   font-weight: 700;
@@ -23,11 +23,19 @@
   border-radius: 10px;
   justify-self: flex-start;
 }
+.buttons__item:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
 
 .notifications {
   width: 71px;
   height: 55px;
   justify-self: flex-end;
+opacity: 70%;
+}
+.notifications:hover {
+  opacity: 90%;
 }
 
 .eyes {
@@ -39,7 +47,7 @@
   /* margin-top: 1%; */
 }
 
-.timeout {
+.countdown {
   font-size: 240px;
   font-weight: 700;
   margin-top: -4%;
@@ -49,20 +57,33 @@
   height: 77px;
   width: 313px;
   border-radius: 10px;
-  background-color: #ddfccb;
-  border: 1px solid #405f3d;
-  color: #405f3d;
   font-size: 36px;
   box-shadow: 10px 10px 5px #4b4b4b;
   margin-bottom: 25px;
+}
+.condition:hover {
+  cursor: pointer;
+}
+
+.work {
+  background-color: #ddfccb;
+  border: 1px solid #405f3d;
+  color: #405f3d;
+}
+
+.rest {
+  background-color: #FCCBCB;
+  color: #CC4141;
+  border: 1px solid #CC4141;
 }
 
 .text {
   color: #ececec;
   font-size: 36px;
   line-height: 50px;
+
 }
 
-/* .text last-child {
-    margin-bottom: 7%;
-} */
+.hidden {
+  display: none;
+}
